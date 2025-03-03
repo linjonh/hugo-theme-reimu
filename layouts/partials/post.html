@@ -51,7 +51,7 @@
         {{ $cover := partial "helpers/randomCover.html" $ctx }}
         {{ if $cover }}
           <img
-            data-src="{{ $cover }}"
+            data-src="{{ $cover }}{{ $page.Params.artId }}"
             data-sizes="auto"
             alt="{{ $page.Title }}"
             class="lazyload"
